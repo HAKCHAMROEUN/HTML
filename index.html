@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    <title>ASIATRIP</title>
+<!-- 
+Journey Template 
+http://www.templatemo.com/tm-511-journey
+-->
+    <!-- load stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">  <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">                <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">                                      <!-- Bootstrap style -->
+    <link rel="stylesheet" type="text/css" href="css/datepicker.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="css/templatemo-style.css">                                   <!-- Templatemo style -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+            <!--[if lt IE 9]>
+              <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+              <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+          <![endif]-->
+      </head>
+
+      <body>
+        <div class="tm-main-content" id="top">
+            <div class="tm-top-bar-bg"></div>    
+            <div class="tm-top-bar" id="tm-top-bar">
+                <div class="container">
+                    <div class="row">
+                        <nav class="navbar navbar-expand-lg narbar-light">
+                            <a class="navbar-brand mr-auto" href="#">
+                                <img src="img/logo.png" alt="Site logo">
+                                ASIATRIP
+                            </a>
+                            <button type="button" id="nav-toggle" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div id="mainNav" class="collapse navbar-collapse tm-bg-white">
+                                <ul class="navbar-nav ml-auto">
+                                  <li class="nav-item">
+                                    <a class="nav-link active" href="#top">Home<span class="sr-only">(current)</span></a>
+                                    
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#tm-section-2">Country info</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#tm-section-3">Recommended Places</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#tm-section-4">Contact Us</a>
+                                    
+                                </li>
+                            </ul>
+                        
+                        </div>                            
+                    </nav>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- .tm-top-bar -->
+
+        <div class="tm-page-wrap mx-auto">
+            <section class="tm-banner">
+                <div class="tm-container-outer tm-banner-bg">
+                    <div class="container">
+
+                        <div class="row tm-banner-row tm-banner-row-header">
+                            <div class="col-xs-12">
+                                <div class="tm-banner-header">
+                                    <h1 class="text-uppercase tm-banner-title">Let's begin</h1>
+                                    <img src="img/dots-3.png" alt="Dots">
+                                    <p class="tm-banner-subtitle">We assist you to choose the best.</p>
+                                    <a href="javascript:void(0)" class="tm-down-arrow-link"><i class="fa fa-2x fa-angle-down tm-down-arrow"></i></a>       
+                                </div>    
+                            </div>  <!-- col-xs-12 -->                      
+                        </div> <!-- row -->
+                        <div class="row tm-banner-row" id="tm-section-search">
+
+                            <form action="index.html" method="get" class="tm-search-form tm-section-pad-2">
+                                <div class="form-row tm-search-form-row">                                
+                                    <div class="form-group tm-form-group tm-form-group-pad tm-form-group-1">
+                                        <label for="inputCity">Choose Your Destination</label>
+                                        <input name="destination" type="text" class="form-control" id="inputCity" placeholder="Type your destination...">
+                                    </div>
+                                    <div class="form-group tm-form-group tm-form-group-1">                                    
+                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-2">
+                                            <label for="inputRoom">How many rooms? </label>
+                                            
+                                            <select name="room" class="form-control tm-select" id="inputRoom">
+                                                <option value="1" selected>1 Room</option>
+                                                <option value="2">2 Rooms</option>
+                                                <option value="3">3 Rooms</option>
+                                                <option value="4">4 Rooms</option>
+                                                <option value="5">5 Rooms</option>
+                                                <option value="6">6 Rooms</option>
+                                                <option value="7">7 Rooms</option>
+                                                <option value="8">8 Rooms</option>
+                                                <option value="9">9 Rooms</option>
+                                                <option value="10">10 Rooms</option>
+                                            </select>                                        
+                                        </div>
+                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">                                       
+                                            <label for="inputAdult">Adult</label>     
+                                            <select name="adult" class="form-control tm-select" id="inputAdult">
+                                                <option value="1" selected>1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                            </select>                                        
+                                        </div>
+                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
+
+                                            <label for="inputChildren">Children</label>                                            
+                                            <select name="children" class="form-control tm-select" id="inputChildren">
+                                            	<option value="0" selected>0</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                            </select>                                        
+                                        </div>
+                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-4">
+
+                                            <label for="inputChildren">Days</label>                                        
+                                            <select name="children" class="form-control tm-select" id="inputChildren">
+                                            	
+                                                <option value="1">one-day journey</option>
+                                                <option value="2">short-term 2-4d</option>
+                                                <option value="3">long-term 5-7d</option>
+                                               
+                                            </select>                                        
+                                        </div>
+                                        
+                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-4">
+
+                                            <label for="inputChildren">Hotel</label>                                        
+                                            <select name="children" class="form-control tm-select" id="inputChildren">
+                                            	
+                                                <option value="1">Ordinary</option>
+                                                <option value="2">Extraordinary</option>
+                                                <option value="3">Luxury</option>
+                                               
+                                            </select>                                        
+                                        </div>
+                                    </div>
+                                </div> <!-- form-row -->
+                                <div class="form-row tm-search-form-row">
+
+                                    <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
+                                        <label for="inputCheckIn">Check In Date</label>
+                                        <input name="check-in" type="text" class="form-control" id="inputCheckIn" placeholder="Check In">
+                                    </div>
+                                    <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
+                                        <label for="inputCheckOut">Check Out Date</label>
+                                        <input name="check-out" type="text" class="form-control" id="inputCheckOut" placeholder="Check Out">
+                                    </div>
+                                    <div class="form-group tm-form-group tm-form-group-pad tm-form-group-1">
+                                        <label for="btnSubmit">&nbsp;</label>
+                                        <button type="submit" class="btn btn-primary tm-btn tm-btn-search text-uppercase" id="btnSubmit">Check Availability</button>
+                                    </div>
+                                </div>                              
+                            </form>                             
+
+                        </div> <!-- row -->
+                        <div class="tm-banner-overlay"></div>
+                    </div>  <!-- .container -->                   
+                </div>     <!-- .tm-container-outer -->                 
+            </section>
+
+            <section class="p-5 tm-container-outer tm-bg-gray">            
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 mx-auto tm-about-text-wrap text-center">                        
+                            <h2 class="text-uppercase mb-4">Your <strong>Journey</strong> is our priority</h2>
+                            <p class="mb-4"><b>ASIATRIP is a webside that providing the informations about the the beautiful places in ASIA, also helping and asist you to choose your best trip and unforgettable memories.</b><p>
+                            <a href="#" class="text-uppercase btn-primary tm-btn">Continue explore</a>                              
+                        </div>
+                    </div>
+                </div>            
+            </section>
+            
+            <div class="tm-container-outer" id="tm-section-2"> 
+                <section class="tm-slideshow-section"><!--c1-->
+                    <div class="tm-slideshow">
+                        <img src="img/angkorwat.jpg" alt="Image">
+                        <img src="img/royalpalace.jpg" alt="Image">
+                        <img src="img/koh.webp" alt="Image">    
+                    </div>
+                    <div class="tm-slideshow-description tm-bg-primary1">
+                        <h2 class="">Cambodia brif description</h2>
+                        <p>Cambodia is a Southeast Asian nation whose landscape spans low-lying plains, the Mekong Delta, mountains and Gulf of Thailand coastline. Phnom Penh, its capital, is home to the art deco Central Market, glittering Royal Palace and the National Museum's historical and archaeological exhibits. In the country's northwest are the ruins of Angkor Wat, a massive stone temple complex built during the Khmer Empire.</p>
+                        <a href="https://en.wikipedia.org/wiki/Cambodia" target="_blank"   class="text-uppercase tm-btn tm-btn-white tm-btn-white-primary1">Continue Reading</a>
+                    </div>
+                </section>
+                <section class="clearfix tm-slideshow-section tm-slideshow-section-reverse"><!--c2-->
+
+                    <div class="tm-right tm-slideshow tm-slideshow-highlight">
+                        <img src="img/taj mahal.jpg" alt="Image">
+                        <img src="img/unity.webp" alt="Image">
+                        <img src="img/goldentemple.jpg" alt="Image">
+                    </div> 
+
+                    <div class="tm-slideshow-description tm-slideshow-description-left tm-bg-highlight">
+                        <h2 class="">India brif description</h2>
+                        <p>India, officially the Republic of India, is a country in South Asia. It is the seventh-largest country by area. India is a mini-continent in itself, a melting pot of cultures, history, traditions, languages and cuisines. India is blessed in terms of geography, that’s exactly why, you will find lush rainforests, beautiful beaches, magnificent snow-capped mountains and plateaus and plains.</p>
+                        <a href="https://en.wikipedia.org/wiki/India" target="_blank" class="text-uppercase tm-btn tm-btn-white tm-btn-white-highlight">Continue Reading</a>
+                    </div>                        
+
+                </section>
+                <section class="tm-slideshow-section"><!--c3-->
+                    <div class="tm-slideshow tm-slideshow2/5">
+                        <img src="img/tpheaven.jpg" alt="Image">
+                        <img src="img/wlcc.webp" alt="Image">
+                        <img src="img/Mount_Tai.jpg" alt="Image">
+                    </div>
+                    <div class="tm-slideshow-description tm-bg-primary3">
+                        <h2 class="">China brif description</h2>
+                        <p>China, officially the People's Republic of China, is a country in East Asia. With a population exceeding 1.4 billion, it is the world's second-most-populous country. China, a captivating blend of history and natural beauty, beckons travelers with its incredible destinations.</p>
+                        <a href="https://en.wikipedia.org/wiki/China" target="_blank" class="text-uppercase tm-btn tm-btn-white tm-btn-white-primary3">Continue Reading</a>
+                    </div>
+                </section>
+                <section class="clearfix tm-slideshow-section tm-slideshow-section-reverse"><!--c4-->
+
+                    <div class="tm-right tm-slideshow tm-slideshow-highlight">
+                        <img src="img/n-seoul-tower_night.jpg" alt="Image">
+                        <img src="img/Bukhansan National Park.jpg" alt="Image">
+                        <img src="img/garden_morning.jpg" alt="Image">
+                    </div> 
+
+                    <div class="tm-slideshow-description tm-slideshow-description-left tm-bg-highlight">
+                        <h2 class="">South Korea brif description</h2>
+                        <p>South Korea, an East Asian nation on the southern half of the Korean Peninsula, shares one of the world’s most heavily militarized borders with North Korea. It’s equally known for its green, hilly countryside dotted with cherry trees and centuries-old Buddhist temples, plus its coastal fishing villages, sub-tropical islands and high-tech cities such as Seoul, the capital. </p>
+                        <a href="https://en.wikipedia.org/wiki/South_Korea" target="_blank" class="text-uppercase tm-btn tm-btn-white tm-btn-white-highlight">Continue Reading</a>
+                    </div>                        
+
+                </section>
+                <section class="tm-slideshow-section"><!--c5-->
+                    <div class="tm-slideshow tm-slideshow2/5">
+                        <img src="img/buddha.jpg" alt="Image">
+                        <img src="img/bangkok.jpg" alt="Image">
+                        <img src="img/Koh-Tao-South-Thailand-Tour.jpg" alt="Image">    
+                    </div>
+                    <div class="tm-slideshow-description tm-bg-primary5">
+                        <h2 class="">Thailand brif description</h2>
+                        <p>Thailand is a Southeast Asian country. It's known for tropical beaches, opulent royal palaces, ancient ruins and ornate temples displaying figures of Buddha. In Bangkok, the capital, an ultramodern cityscape rises next to quiet canalside communities and the iconic temples of Wat Arun, Wat Pho and the Emerald Buddha Temple.</p>
+                        <a href="https://en.wikipedia.org/wiki/Thailand" target="_blank" class="text-uppercase tm-btn tm-btn-white tm-btn-white-primary5">Continue Reading</a>
+                    </div>
+                </section>
+                <section class="clearfix tm-slideshow-section tm-slideshow-section-reverse"><!--c6-->
+
+                    <div class="tm-right tm-slideshow tm-slideshow-highlight">
+                        <img src="img/bali.jpg" alt="Image">
+                        <img src="img/Prambanan Temple.jpg" alt="Image">
+                        <img src="img/uluwatu.jpg" alt="Image">
+                    </div> 
+
+                    <div class="tm-slideshow-description tm-slideshow-description-left tm-bg-highlight">
+                        <h2 class="">Indonesia brif description</h2>
+                        <p>Indonesia, officially the Republic of Indonesia, is a country in Southeast Asia and Oceania between the Indian and Pacific oceans. It consists of over 17,000 islands, including Sumatra, Java, Sulawesi, and parts of Borneo and New Guinea.</p>
+                        <a href="https://en.wikipedia.org/wiki/Indonesia" target="_blank" class="text-uppercase tm-btn tm-btn-white tm-btn-white-highlight">Continue Reading</a>
+                    </div>                        
+
+                </section>
+                <section class="tm-slideshow-section"><!--c7-->
+                    <div class="tm-slideshow">
+                        <img src="img/fuji.webp" alt="Image">
+                        <img src="img/Tokyo-Tower.jpg" alt="Image">
+                        <img src="img/shrine.jpg" alt="Image">
+                    </div>
+                    <div class="tm-slideshow-description tm-bg-primary7">
+                        <h2 class="">Japan brif description</h2>
+                        <p>Japan is an island country in East Asia. It is in the northwest Pacific Ocean and is bordered on the west by the Sea of Japan, extending from the Sea of Okhotsk in the north toward the East China Sea, Philippine Sea, and Taiwan in the south.</p>
+                        <a href="https://en.wikipedia.org/wiki/Japan" target="_blank"  class="text-uppercase tm-btn tm-btn-white tm-btn-white-primary7">Continue Reading</a>
+                    </div>
+                </section>
+            </div>        
+            <div class="tm-container-outer" id="tm-section-3">
+                <ul class="nav nav-pills tm-tabs-links">
+                    <li class="tm-tab-link-li">
+                        <a href="#1a" data-toggle="tab" class="tm-tab-link">
+                            <img src="img/th.png" alt="Image" class="img-fluid"  width="50" height="50">
+                            Thailand
+                        </a>
+                    </li>
+                    <li class="tm-tab-link-li">
+                        <a href="#2a" data-toggle="tab" class="tm-tab-link">
+                            <img src="img/indo.png" alt="Image" class="img-fluid" width="120" height="80">
+                            <br>
+                            Indonesia
+                        </a>
+                    </li>
+                    <li class="tm-tab-link-li">
+                        <a href="#3a" data-toggle="tab" class="tm-tab-link">
+                            <img src="img/cbd.png" alt="Image" class="img-fluid" width="100" height="80">
+                            Cambodia
+                        </a>
+                    </li>
+                    <li class="tm-tab-link-li">
+                        <a href="#4a" data-toggle="tab" class="tm-tab-link active"><!-- Current Active Tab -->
+                            <img src="img/india.png" alt="Image" class="img-fluid" width="100" height="100">
+                            india
+                        </a>
+                    </li>
+                    <li class="tm-tab-link-li">
+                        <a href="#5a" data-toggle="tab" class="tm-tab-link">
+                            <img src="img/cn.png" alt="Image" class="img-fluid" width="120" height="120">
+                            China
+                        </a>
+                    </li>
+                    <li class="tm-tab-link-li">
+                        <a href="#6a" data-toggle="tab" class="tm-tab-link">
+                            <img src="img/jp.png" alt="Image" class="img-fluid" width="100" height="100">
+                            Japan
+                        </a>
+                    </li>
+                    <li class="tm-tab-link-li">
+                        <a href="#7a" data-toggle="tab" class="tm-tab-link">
+                            <img src="img/skr.png" alt="Image" class="img-fluid" width="100" height="100">
+                            South Korean
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content clearfix">
+                	
+                    <!-- Tab 1 -->
+                    <div class="tab-pane fade" id="1a">
+                        <div class="tm-recommended-place-wrap">
+                            <div class="tm-recommended-place">
+                                <img src="img/bangkok.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Bangkok</h3>
+                                    <p class="tm-text-highlight">Thailand</p>
+                                    <p class="tm-text-gray">A city that never sleeps, Bangkok, the capital of Thailand is a modern-day melting pot of contrasting cultures and faiths. Here, towering skyscrapers stand in harmony next to temples and monasteries. The luxury malls and shopping centres compete with the street bazaars and floating markets.</p>   
+                                </div>
+                                <a href="https://en.wikipedia.org/wiki/Bangkok" target="_blank" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$300</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>                        
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/phuket.jpeg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Phuket</h3>
+                                    <p class="tm-text-highlight">Thailand</p>
+                                    <p class="tm-text-gray">The largest island in Thailand, Phuket has everything the country offers. It is located in southern Thailand, on the Andaman Sea coastline. Serviced by the Phuket International Airport, the island sees no shortage of travelers at any time of the year. Golden beaches, numerous offshore islands, upbeat markets, a high-octane nightlife, and thrilling watersports characterize Phuket. It is also one of the fastest-accessible beach destinations in Thailand.</p>   
+                                </div>
+                                <div id="preload-hover-img"></div>
+                                <a href="https://en.wikipedia.org/wiki/Phuket_province" target="_blank" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$250</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/Koh-Tao-South-Thailand-Tour.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Ko Tao</h3>
+                                    <p class="tm-text-highlight">Thailand</p>
+                                    <p class="tm-text-gray">Ko Tao is an island in Thailand. Restaurants, nightspots and dive shops cluster in Mae Haad Beach and near Sai Ri Beach. Villas dot palm-fringed beaches such as Chalok Baan Kao Bay, on the south coast. In the northwest, Koh Nang Yuan is a group of islets with hilltop views. Ko Tao is known for its tropical coral reefs, with species including whale sharks and rays. Hawksbill and green turtles gather here to breed.</p>   
+                                </div>
+                                <a href="https://en.wikipedia.org/wiki/Ko_Tao" target="_blank" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$250</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/buddha.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">The Big Buddha, Phuket</h3>
+                                    <p class="tm-text-highlight">Karon, Thailand</p>
+                                    <p class="tm-text-gray">Phuket Big Buddha, or The Great Buddha of Phuket, is a seated Maravija Buddha statue in Phuket, Thailand. The official name is Phra Phutta Ming Mongkol Eknakiri, shortened to Ming Mongkol Buddha. Sitting atop Nakkerd Hill near Chalong, construction began in 2004. Expansion of the base was ongoing as of 2015.</p>   
+                                </div>
+                                <a href="https://en.wikipedia.org/wiki/Phuket_Big_Buddha" target="_blank" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$200</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+                            <div class="tm-recommended-place">
+                                <img src="img/chiangmai.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Chiang Mai</h3>
+                                    <p class="tm-text-highlight">Thailand</p>
+                                    <p class="tm-text-gray">Chiang Mai is a city in mountainous northern Thailand. Founded in 1296, it was capital of the independent Lanna Kingdom until 1558. Its Old City area still retains vestiges of walls and moats from its history as a cultural and religious center. It’s also home to hundreds of elaborate Buddhist temples, including 14th-century Wat Phra Singh and 15th-century Wat Chedi Luang, adorned with carved serpents.</p>   
+                                </div>
+                                <a href="https://en.wikipedia.org/wiki/Chiang_Mai" target="_blank" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$200</p> 
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>    
+                        </div>                        
+
+                        <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Show More Places</a>
+                    </div> <!-- tab-pane -->
+                    
+                    <!-- Tab 2 -->
+                    <div class="tab-pane fade" id="2a">
+
+                        <div class="tm-recommended-place-wrap">
+                            <div class="tm-recommended-place">
+                                <img src="img/bali.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Bali</h3>
+                                    <p class="tm-text-highlight">Indonesia</p>
+                                    <p class="tm-text-gray">Bali is a province of Indonesia and the westernmost of the Lesser Sunda Islands. East of Java and west of Lombok, the province includes the island of Bali and a few smaller offshore islands, notably Nusa Penida, Nusa Lembongan, and Nusa Ceningan to the southeast.</p>   
+                                </div>
+                                <a href="https://en.wikipedia.org/wiki/Bali" target="_blank" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$220</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>                        
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/gili-air-birds-eye.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Gili Islands</h3>
+                                    <p class="tm-text-highlight">Indonesia</p>
+                                    <p class="tm-text-gray">The Gili Islands are a group of 3 tiny islands – Gili Trawangan, Gili Meno and Gili Air – in Indonesia, near the coast of northwest Lombok Island. Characterized by sandy beaches fringed with palm trees, they're known for their coral reefs just offshore. On the smallest island of Gili Meno, sea turtles swim at Turtle Point. At Gili Trawangan, the largest island, a sunken ship sits at Wreck Point near Mentigi Beach. </p>   
+                                </div>
+                                <a href="https://en.wikipedia.org/wiki/Gili_Islands" target="_blank" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$250</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/Prambanan Temple.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Prambanan Temple</h3>
+                                    <p class="tm-text-highlight">Indonesia</p>
+                                    <p class="tm-text-gray">Prambanan is a 9th-century Hindu temple compound in the Special Region of Yogyakarta, in southern Java, Indonesia, dedicated to the Trimūrti, the expression of God as the Creator, the Preserver and the Destroyer. </p>   
+                                </div>
+                                <a href="https://en.wikipedia.org/wiki/Prambanan_Temple_Compounds" target="_blank" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$240</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/uluwatu.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Uluwatu Temple</h3>
+                                    <p class="tm-text-highlight">Indonesia</p>
+                                    <p class="tm-text-gray">Uluwatu Temple is a Balinese Hindu sea temple located in Uluwatu. The temple is regarded as one of the sad kahyangan and is dedicated to Sang Hyang Widhi Wasa in his manifestation as Rudra. </p>   
+                                </div>
+                                <a href="https://en.wikipedia.org/wiki/Uluwatu_Temple" target="_blank" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$250</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>    
+                            <div class="tm-recommended-place">
+                                <img src="img/borobudur.webp" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Borobudur</h3>
+                                    <p class="tm-text-highlight">Magelang Regency, Central Java, Indonesia</p>
+                                    <p class="tm-text-gray">This famous Buddhist temple, dating from the 8th and 9th centuries, is located in central Java. It was built in three tiers: a pyramidal base with five concentric square terraces, the trunk of a cone with three circular platforms and, at the top, a monumental stupa. The walls and balustrades are decorated with fine low reliefs, covering a total surface area of 2,500 m2. Around the circular platforms are 72 openwork stupas, each containing a statue of the Buddha. The monument was restored with UNESCO's help in the 1970s. </p>   
+                                </div>
+                                <a href="https://en.wikipedia.org/wiki/Borobudur" target="_blank" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$250</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>    
+                        </div>                        
+
+                        <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Show More Places</a>
+                    </div> <!-- tab-pane -->          
+                    
+                    <!-- Tab 3 -->     
+                    <div class="tab-pane fade" id="3a">
+
+                        <div class="tm-recommended-place-wrap">
+                            <div class="tm-recommended-place">
+                                <img src="img/angkorwat.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Angkor Wat</h3>
+                                    <p class="tm-text-highlight">Siem Reap, Cambodia</p>
+                                    <p class="tm-text-gray">Angkor Wat is a Buddhist temple complex in Cambodia, located on a site measuring 162.6 hectares. It resides within the ancient Khmer capital city of Angkor. The Guinness World Records considers it as the largest religious structure in the world.</p>   
+                                </div>
+                                <a href="https://en.wikipedia.org/wiki/Angkor_Wat" target="_blank" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$330</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>                        
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/royalpalace.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">royal Palace</h3>
+                                    <p class="tm-text-highlight">Samdech Sothearos Blvd, Phnom Penh, Cambodia</p>
+                                    <p class="tm-text-gray">The Royal Palace is one of the attractive places to visit in Cambodia. The palace serves as the supreme estate of the King of Cambodia. It is a fine example of Khmer architecture with a little touch of French. The ornate buildings and grounds provide an intriguing insight into the history.</p>   
+                                </div>
+                                <a href="https://en.wikipedia.org/wiki/Royal_Palace_of_Cambodia" target="_blank" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$340</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/toulsleng.jpeg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Tuol Sleng Genocide Museum</h3>
+                                    <p class="tm-text-highlight">St.113, Boeung Keng Kang III, Khan Boeng Keng Kang, Phnom Penh, Cambodia</p>
+                                    <p class="tm-text-gray">Tuol Sleng Genocide Museum is the memorial site of the S-21 interrogation and detention center of the Khmer Rouge regime. Located in the heart of Phnom Penh, it preserves evidence of a tragic period in Cambodian history with the aim of encouraging visitors to be messengers of peace.</p>   
+                                </div>
+                                <a href="https://en.wikipedia.org/wiki/Tuol_Sleng_Genocide_Museum" target="_blank" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$250</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/koh_rong_island.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">koh Rong</h3>
+                                    <p class="tm-text-highlight">koh kong, Cambodia</p>
+                                    <p class="tm-text-gray">Koh Rong is an island in the Sihanoukville Province of Cambodia. It’s known for its sandy coves and coral reefs, like those around Koh Rong Pier. Inland, the dense jungle terrain is dotted with coconut palms and waterfalls.</p>   
+                                </div>
+                                <a href="https://en.wikipedia.org/wiki/Koh_Rong" target="_blank" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$200</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div> 
+                            <div class="tm-recommended-place">
+                                <img src="img/bayon.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Bayon</h3>
+                                    <p class="tm-text-highlight">Angkor Thom, Siem Reap, Cambodia</p>
+                                    <p class="tm-text-gray">Bayon Temple is a marvel of ancient engineering and craftsmanshipIts intricate design and breathtaking architecture make it a must-see attraction, leaving visitors in awe of the skill and dedication that went into its construction.</p>   
+                                </div>
+                                <a href="https://en.wikipedia.org/wiki/Bayon" target="_blank" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$360</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>   
+                        </div>                        
+
+                        <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Show More Places</a>
+                    </div> <!-- tab-pane -->
+                    
+                    <!-- Tab 4 -->
+                    <div class="tab-pane fade show active" id="4a">
+                    <!-- Current Active Tab WITH "show active" classes in DIV tag -->
+                        <div class="tm-recommended-place-wrap">
+                            <div class="tm-recommended-place">
+                                <img src="img/taj mahal.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Taj mahal</h3>
+                                    <p class="tm-text-highlight">Agra, Uttar Pradesh, India</p>
+                                    <p class="tm-text-gray">Majestically located on the banks of Yamuna River, this wonder of the world was built by the Mughal Emperor Shah Jahan as a memorial for his beloved wife Mumtaz Mahal.</p>   
+                                </div>
+                                <a href="https://en.wikipedia.org/wiki/Taj_Mahal" target="_blank" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$440</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>                        
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/status.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">statue of unity</h3>
+                                    <p class="tm-text-highlight">Narmada Valley Kevadiya, Narmada, Gujarat, India</p>
+                                    <p class="tm-text-gray">Located about two hours from Vadodara, the Statue of Unity is dedicated to the Iron Man of India, Sardar Vallabh Bhai Patel. It stands proud at the Sandhu Bet island, overlooking the Sardar Sarovar Dam.</p>   
+                                </div>
+                                <div id="preload-hover-img"></div>
+                                <a href="https://en.wikipedia.org/wiki/Statue_of_Unity" target="_blank" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$350</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/golden.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">golden temple</h3>
+                                    <p class="tm-text-highlight">Amritsar</p>
+                                    <p class="tm-text-gray">Also known as Sri Harmandir Sahib, Golden Temple is considered to be the most important pilgrimage site amongst Sikhs and will leave you in awe with its jaw-dropping gold and marble edifice.</p>   
+                                </div>
+                                <a href="https://en.wikipedia.org/wiki/Golden_Temple" target="_blank" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$360</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/baga.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">baga beache</h3>
+                                    <p class="tm-text-highlight">Goa, India</p>
+                                    <p class="tm-text-gray">One of the most popular beaches in Goa, Baga Beach offers quirky beach-side shacks and a number of thrilling water sports.</p>   
+                                </div>
+                                <a href="https://en.wikipedia.org/wiki/Baga,_Goa" target="_blank" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$170</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+                            <div class="tm-recommended-place">
+                                <img src="img/nageshwar-shiva-temple.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Nageshvara Jyotirlinga</h3>
+                                    <p class="tm-text-highlight">Aundha Nagnath, Maharashtra, India</p>
+                                    <p class="tm-text-gray">Nageshwara Jyotirlinga is a temple and pilgrimage site devoted to Shiva and houses one of the twelve Jyotirlingas. It is located in Aundha Nagnath, Maharashtra. The Shiva Purana says Nageshvara Jyotirlinga is in 'the Darukavana', which is an ancient name of a forest in India.</p>   
+                                </div>
+                                <a href="https://en.wikipedia.org/wiki/Nageshvara_Jyotirlinga" target="_blank" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$200</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>    
+                        </div>                        
+
+                        <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Show More Places</a>
+                    </div> <!-- tab-pane -->
+                    
+                    <!-- Tab 5 -->
+                    <div class="tab-pane fade" id="5a">
+
+                        <div class="tm-recommended-place-wrap">
+                            <div class="tm-recommended-place">
+                                <img src="img/wlcc.webp" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">great wall of China</h3>
+                                    <p class="tm-text-highlight">China</p>
+                                    <p class="tm-text-gray">The Great Wall of China is a series of fortifications that were built across the historical northern borders of ancient Chinese states and Imperial China as protection against various nomadic groups from the Eurasian Steppe.</p>   
+                                </div>
+                                <a href="https://en.wikipedia.org/wiki/Great_Wall_of_China" target="_blank" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$450</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>                        
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/bmy.jpeg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Emperor Qinshihuang's Mausoleum Site Museum</h3>
+                                    <p class="tm-text-highlight">Xi'an, China</p>
+                                    <p class="tm-text-gray">Emperor Qinshihuang's Mausoleum Site Museum was built based on the Mausoleum of Emperor Qin Shi Huang, which was historically known as Lishan Garden and is the largest imperial tomb in China with the richest buried objects.</p>   
+                                </div>
+                                <a href="https://en.wikipedia.org/wiki/Terracotta_Army" target="_blank" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$260</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/tpheaven.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Temple of Heaven</h3>
+                                    <p class="tm-text-highlight">Beijing, China</p>
+                                    <p class="tm-text-gray">The Temple of Heaven is a complex of imperial religious buildings situated in the southeastern part of central Beijing. The complex was visited by the Emperors of the Ming and Qing dynasties for annual ceremonies of prayer to Heaven for a good harvest.</p>   
+                                </div>
+                                <a href="https://en.wikipedia.org/wiki/Temple_of_Heaven" target="_blank" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$300</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/Mount_Tai.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Mount Tai</h3>
+                                    <p class="tm-text-highlight">Shandong, China</p>
+                                    <p class="tm-text-gray">Mount Tai is a mountain of historical and cultural significance located north of the city of Tai'an. It is the highest point in Shandong province, China. The tallest peak is the Jade Emperor Peak, which is commonly reported as being 1,545 meters tall.</p>   
+                                </div>
+                                <a href="https://en.wikipedia.org/wiki/Mount_Tai" target="_blank" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$250</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+                            <div class="tm-recommended-place">
+                                <img src="img/zjj.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Zhangjiajie National Forest Park</h3>
+                                    <p class="tm-text-highlight"> Zhangjiajie, Hunan, China</p>
+                                    <p class="tm-text-gray">Zhangjiajie National Park is located in the central-eastern area of China in the Wulingyuan Scenic Area which features multiple protected areas.  The national park encompasses an area of 18.59 square miles (48.15 sq km).  It is a GANP Ambassador Park.</p>   
+                                </div>
+                                <a href="https://en.wikipedia.org/wiki/Zhangjiajie_National_Forest_Park" target="_blank" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$380</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>     
+                        </div>                        
+
+                        <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Show More Places</a>
+                    </div> <!-- tab-pane -->   
+                    
+                    <!-- Tab 6 -->            
+                    <div class="tab-pane fade" id="6a">
+
+                        <div class="tm-recommended-place-wrap">
+                            <div class="tm-recommended-place">
+                                <img src="img/Tokyo-Tower.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Tokyo Tower</h3>
+                                    <p class="tm-text-highlight">Tokyo, Japan</p>
+                                    <p class="tm-text-gray">The Tokyo Tower is Japan’s second tallest skyscraper, standing 333 meters tall, with its Observatory Deck present at 150 meters of height. This tower is 3 meters taller than the Eiffel Tower, the model for its construction. The tower’s main deck has glass floors called the SkyWalk Windows or lookdown windows, providing a thrilling experience when you move around this floor. The Top Deck is 250 meters high and provides a bird's eye view of Tokyo.</p>   
+                                </div>
+                                <a href="https://en.wikipedia.org/wiki/Tokyo_Tower" target="_blank" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$360</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>                        
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/fuji.webp" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">mount fuji</h3>
+                                    <p class="tm-text-highlight">	Fuji-Hakone-Izu National Park, Japan</p>
+                                    <p class="tm-text-gray">Mount Fuji, highest mountain in Japan. It rises to 12,388 feet (3,776 metres) near the Pacific Ocean coast in Yamanashi and Shizuoka ken (prefectures) of central Honshu, about 60 miles (100 km) west of the Tokyo-Yokohama metropolitan area. </p>   
+                                </div>
+                                <a href="https://en.wikipedia.org/wiki/Mount_Fuji" target="_blank" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$350</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/osaka.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Osaka Castle</h3>
+                                    <p class="tm-text-highlight">Osaka, Japan</p>
+                                    <p class="tm-text-gray">Osaka Castle is a Japanese castle in Chūō-ku, Osaka, Japan. The castle and fortress are one of Japan's most famous landmarks and it played a major role in the unification of Japan during the sixteenth century of the Azuchi-Momoyama period.</p>   
+                                </div>
+                                <a href="https://en.wikipedia.org/wiki/Osaka_Castle" target="_blank" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$340</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/shrine.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Fushimi Inari-taisha Shrine</h3>
+                                    <p class="tm-text-highlight">Fushimi-ku, Kyoto, Kyoto, Kyoto Prefecture, Japan</p>
+                                    <p class="tm-text-gray">Inari is the Shinto god of rice – one of the most important gods in Shintoism. Of the thousands of shrines dedicated to him, Fushimi Inari is decidedly the most important. Most travelers come to see the vermilion gates, but the shrine itself is also open for exploration, and the buildings are quite spectacular.</p>   
+                                </div>
+                                <a href="https://en.wikipedia.org/wiki/Fushimi_Inari-taisha" target="_blank" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$230</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+                            <div class="tm-recommended-place">
+                                <img src="img/jinja.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Itsukushima Jinja</h3>
+                                    <p class="tm-text-highlight">Itsukushima, Japan</p>
+                                    <p class="tm-text-gray">Itsukushima Shrine is a Shinto shrine on the island of Itsukushima, best known for its "floating" torii. It is in the city of Hatsukaichi, in Hiroshima Prefecture in Japan, accessible from the mainland by ferry at Miyajimaguchi Station. </p>   
+                                </div>
+                                <a href="https://en.wikipedia.org/wiki/Itsukushima_Shrine" target="_blank" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$330</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>    
+                        </div>                        
+
+                        <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Show More Places</a>
+                    </div> <!-- tab-pane -->
+                    
+                    <!-- Tab 7 -->
+                    <div class="tab-pane fade" id="7a">
+
+                        <div class="tm-recommended-place-wrap">
+                            <div class="tm-recommended-place">
+                                <img src="img/n-seoul-tower_night.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">N Seoul Tower</h3>
+                                    <p class="tm-text-highlight">Seoul, South Korea</p>
+                                    <p class="tm-text-gray">The N Seoul Tower, officially the YTN Seoul Tower and commonly known as Namsan Tower or Seoul Tower, is a communication and observation tower located on Namsan Mountain in central Seoul, South Korea. The 236-meter-tall tower marks the second highest point in Seoul and is considered a local landmark. </p>   
+                                </div>
+                                <a href="https://en.wikipedia.org/wiki/N_Seoul_Tower" target="_blank" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$270</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>                        
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/gyeong.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Gyeongbokgung Palace</h3>
+                                    <p class="tm-text-highlight">Seoul, South Korea</p>
+                                    <p class="tm-text-gray">Gyeongbokgung, also known as Gyeongbokgung Palace, was the main royal palace of the Joseon dynasty. Built in 1395, it is located in northern Seoul, South Korea. The largest of the Five Grand Palaces built by the Joseon dynasty, Gyeongbokgung served as the home of the royal family and the seat of government.</p>   
+                                </div>
+                                <a href="https://en.wikipedia.org/wiki/Gyeongbokgung" target="_blank" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$230</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/garden_morning.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Garden of Morning Calm</h3>
+                                    <p class="tm-text-highlight">Gapyeong County, South Korea</p>
+                                    <p class="tm-text-gray">The Garden of Morning Calm is an arboretum located at the east of Seoul, in the Gapyeong district of South Korea. On 300,000 m², it houses 5,000 species of plants, some rare or endangered and attracts 600,000 tourists per year.</p>   
+                                </div>
+                                <a href="https://en.wikipedia.org/wiki/Garden_of_Morning_Calm" target="_blank" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$140</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/Bukhansan National Park.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Bukhansan National Park</h3>
+                                    <p class="tm-text-highlight">Seoul, South Korea</p>
+                                    <p class="tm-text-gray">Popular among hiking enthusiasts, Bukhansan National Park is located just outside the city of Seoul. Embark on the popular and easiest Bukhansanseong Course to Baegundae Peak, which is the park’s highest point.</p>   
+                                </div>
+                                <a href="https://en.wikipedia.org/wiki/Bukhansan_National_Park" target="_blank" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$190</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+                            <div class="tm-recommended-place">
+                                <img src="img/haeundae.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Haeundae Beach</h3>
+                                    <p class="tm-text-highlight">Busan, South Korea</p>
+                                    <p class="tm-text-gray">The beach is laden with rows of lights and lights designed as castle, trees and love signs. The beach is crowded with locals and tourists taking pictures among the light. There a some locals with small fireworks on the beach which adds to the entertainment to the crowd. A must place to see.</p>   
+                                </div>
+                                <a href="https://en.wikipedia.org/wiki/Haeundae_Beach" target="_blank" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">$200</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>    
+                        </div>                        
+
+                        <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Show More Places</a>
+                    </div> <!-- tab-pane -->
+                </div>
+            </div>
+            
+            <div class="tm-container-outer tm-position-relative" id="tm-section-4">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.1030156375346!2d104.8960747743931!3d11.61600531375081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31095177ee61fd7d%3A0xa66cfdf83a58b2ae!2sAmerican%20University%20of%20Phnom%20Penh!5e0!3m2!1sen!2skh!4v1709282424192!5m2!1sen!2skh" width="1400" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <form action="index.html" method="post" class="tm-contact-form">
+                    
+                    <div class="form-group tm-name-container">
+                        <input type="text" id="contact_name" name="contact_name" class="form-control" placeholder="Name"  required/>
+                    </div>
+                    <div class="form-group tm-email-container">
+                        <input type="email" id="contact_email" name="contact_email" class="form-control" placeholder="Email"  required/>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="contact_subject" name="contact_subject" class="form-control" placeholder="Subject"  required/>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="contact_message" name="contact_message" class="form-control" rows="9" placeholder="Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary tm-btn-primary tm-btn-send text-uppercase">Send Message Now</button>
+                </form>
+            </div> <!-- .tm-container-outer -->
+             
+            <footer class="tm-container-outer">
+                <p class="mb-0">Copyright © <span class="tm-current-year">2024</span> ASIATRIP
+                    
+                . Edited by <a rel="nofollow" href="http://www.google.com/+templatemo" target="_parent">HAK SOKCHAMROEUN</a></p>
+            </footer>
+        </div>
+    </div> <!-- .main-content -->
+     
+    <!-- load JS files -->
+    <script src="js/jquery-1.11.3.min.js"></script>             <!-- jQuery (https://jquery.com/download/) -->
+    <script src="js/popper.min.js"></script>                    <!-- https://popper.js.org/ -->       
+    <script src="js/bootstrap.min.js"></script>                 <!-- https://getbootstrap.com/ -->
+    <script src="js/datepicker.min.js"></script>                <!-- https://github.com/qodesmith/datepicker -->
+    <script src="js/jquery.singlePageNav.min.js"></script>      <!-- Single Page Nav (https://github.com/ChrisWojcik/single-page-nav) -->
+    <script src="slick/slick.min.js"></script>                  <!-- http://kenwheeler.github.io/slick/ -->
+    <script src="js/jquery.scrollTo.min.js"></script>           <!-- https://github.com/flesler/jquery.scrollTo -->
+    <script> 
+        /* Google Maps
+        ------------------------------------------------*/
+        var map = '';
+        var center;
+
+        function initialize() {
+            var mapOptions = {
+                zoom: 16,
+                center: new google.maps.LatLng(37.769725, -122.462154),
+                scrollwheel: false
+            };
+
+            map = new google.maps.Map(document.getElementById('google-map'),  mapOptions);
+
+            google.maps.event.addDomListener(map, 'idle', function() {
+              calculateCenter();
+          });
+
+            google.maps.event.addDomListener(window, 'resize', function() {
+              map.setCenter(center);
+          });
+        }
+
+        function calculateCenter() {
+            center = map.getCenter();
+        }
+
+        function loadGoogleMap(){
+            var script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDVWt4rJfibfsEDvcuaChUaZRS5NXey1Cs&v=3.exp&sensor=false&' + 'callback=initialize';
+            document.body.appendChild(script);
+        } 
+
+        /* DOM is ready
+        ------------------------------------------------*/
+        $(function(){
+
+            // Change top navbar on scroll
+            $(window).on("scroll", function() {
+                if($(window).scrollTop() > 100) {
+                    $(".tm-top-bar").addClass("active");
+                } else {                    
+                 $(".tm-top-bar").removeClass("active");
+                }
+            });
+
+            // Smooth scroll to search form
+            $('.tm-down-arrow-link').click(function(){
+                $.scrollTo('#tm-section-search', 300, {easing:'linear'});
+            });
+
+            // Date Picker in Search form
+            var pickerCheckIn = datepicker('#inputCheckIn');
+            var pickerCheckOut = datepicker('#inputCheckOut');
+
+            // Update nav links on scroll
+            $('#tm-top-bar').singlePageNav({
+                currentClass:'active',
+                offset: 60
+            });
+
+            // Close navbar after clicked
+            $('.nav-link').click(function(){
+                $('#mainNav').removeClass('show');
+            });
+
+            // Slick Carousel
+            $('.tm-slideshow').slick({
+                infinite: true,
+                arrows: true,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            });
+
+            loadGoogleMap();                                       // Google Map                
+            $('.tm-current-year').text(new Date().getFullYear());  // Update year in copyright           
+        });
+
+    </script>             
+
+</body>
+</html>
